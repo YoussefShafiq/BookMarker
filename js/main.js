@@ -58,7 +58,7 @@ function display() {
 
 
 const websiteNameRegex = /[1-9A-Za-zا-ي]{2,30}/
-const websiteLinkRegex = /^http(s)?:\/\/(?:www\.)[-a-zA-Z0-9@%._\+~#=]{2,256}\.[a-z]{2,6}\b(?:[-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/
+const websiteLinkRegex = /^http(s)?:\/\/(?:www\.)?[-a-zA-Z0-9@%._\+~#=]{2,256}\.[a-z]{2,6}\b(?:[-a-zA-Z0-9@:%_\+.~#?&\/\/=]*)/
 
 function validateLink(link) {
     return websiteLinkRegex.test(link)
