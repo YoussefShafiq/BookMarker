@@ -1,0 +1,86 @@
+:root {
+    --Pacifico: "Pacifico", cursive;
+    --Righteous: "Righteous", sans-serif;
+    --Caption: "PT Sans Caption", sans-serif;
+    --background-color: #f7ecde;
+    --gradient-color: linear-gradient(to right, #3da55c, #b5ac49);
+    --text-color: #000000;
+}
+
+body {
+    min-height: 100vh;
+    background-color: var(--background-color);
+}
+
+h1 {
+    font-family: var(--Pacifico);
+    width: fit-content;
+    color: #352e28;
+    font-size: clamp(2.5rem, 2.3897rem + 0.5882vw, 3.125rem);
+
+}
+
+h1::after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 40%;
+    background-color: #fec260;
+    top: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all .4s;
+}
+
+h1:hover:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 90%;
+    background-color: #fec260;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: -1;
+    transition: all .4s;
+}
+
+.formcontent {
+    border-top: dotted;
+    padding-block: 40px;
+    border-bottom: dotted;
+
+    h2 {
+        font-size: clamp;
+        font-family: var(--Righteous);
+        width: fit-content;
+        background: var(--gradient-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        font-size: clamp(1.25rem, 1.0294rem + 1.1765vw, 2.5rem);
+    }
+
+    label {
+        font-family: var(--Caption);
+        font-weight: 600;
+        font-size: 16px;
+        line-height: 24px;
+        color: var(--text-color);
+    }
+
+    .add {
+        background-color: #ff4400;
+        border-color: #ff4400;
+        transition: all .3s;
+    }
+
+    .add:hover {
+        background-color: #ff5c20;
+        border-color: #ff5c20;
+    }
+
+
+
+}

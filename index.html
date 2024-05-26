@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1 class="m-auto position-relative mt-3 mb-5">Bookmarker</h1>
+
+        <div class="formcontent">
+            <h2 class="m-auto position-relative mb-5"><i class="fa-solid fa-bookmark"></i> Bookmark your favorite
+                sites <i class="fa-solid fa-bookmark"></i></h2>
+
+            <label for="siteName" class="mt-2"><i class="fa-solid fa-book-bookmark"></i> Site Name</label>
+            <input type="text" id="siteName" class="form-control my-2" placeholder="Site Name">
+            <label for="SiteURL" class="mt-2"><i class="fa-solid fa-link"></i> Site URL</label>
+            <input type="text" id="SiteURL" class="form-control my-2 " placeholder="Site URL">
+            <div id="validate" class=" text-danger fw-bold text-center fs-4"></div>
+            <div class="text-center">
+                <div class="btn btn-danger add mt-3" onclick="add()">add</div>
+            </div>
+
+        </div>
+
+
+        <div class="savedSites py-3">
+            <table class="table bg-light text-center">
+                <thead>
+                    <tr>
+                        <th>index</th>
+                        <th>website name</th>
+                        <th>visit</th>
+                        <th>delete</th>
+                    </tr>
+                </thead>
+                <tbody id="websites">
+
+                </tbody>
+            </table>
+        </div>
+
+    </div>
+
+
+
+
+    <script src="js/main.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
